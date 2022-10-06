@@ -1,6 +1,6 @@
-const character = 'mario';
+var character = 'wwww';
 console.log(character);
-const inputs = document.querySelectorAll('input');
+var inputs = document.querySelectorAll('input');
 inputs.forEach(function (input) {
-  console.log(input);
+    console.log(input);
 });
