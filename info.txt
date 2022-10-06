@@ -1,0 +1,25 @@
+1. install node
+
+2. terminal type: 
+  npm install -g typescript
+
+3 due to the browser does not support ts, on terminal type:
+
+tsc sandbox.ts sandbox.js // means ts comile to js 
+
+note:
+
+if they have same file name or the js file does not exist, simply type in:
+
+tsc sandbox.ts
+
+4. after the file has been created, may see errors in ts const variable, it because both js and ts have the same, close one of them solve the problem.
+again, browser only runs the .js file not the ts file, so it won't effect any thing
+
+
+
+/////////////////////////////////////////////////
+
+this it would auto compile when hit ctrl + s 
+
+tsc sandbox.tx -w 
