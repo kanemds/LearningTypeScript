@@ -58,7 +58,7 @@ foo(2, 3)
 
 // case 6
 
-// notice this function has nothing to return,  In JS it will become undefined but in ts need to add :void at the end
+// notice this function has nothing to return,  In JS it will return undefined but in ts return void or add :void at the end
 let g = (a: number, b: number, c: number | string = 10): void => {
   console.log(a + b)
   console.log(c)
