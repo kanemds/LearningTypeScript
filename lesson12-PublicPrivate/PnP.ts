@@ -28,8 +28,8 @@ invTwo.amount = 188
 class InvoiceTwo {
 
   constructor(
-    readonly client: string,
-    private details: string,
+    readonly client: string, // only read can't change value
+    private details: string, // read and change inside class
     public amount: number
   ) { }
   format() {
