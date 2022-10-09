@@ -18,7 +18,6 @@ console.log(docOne.age)
 // <T> capture what property inside object,  (obj: T) and the obj: T <--- capture property can be return  
 const addUIDTwo = <T>(obj: T) => {
   let uid = Math.floor(Math.random() * 100)
-
   // docOne.name and docOne.age becuase of returning ...obj, 
   // did not defind what kind of obj returning
   return { ...obj, uid }
@@ -84,6 +83,12 @@ const interFour: CaseOne<Number[]> = {
   id: 1,
   name: "b",
   data: [1, 3, 4]
+}
+
+const interFive: CaseOne<Object> = {
+  id: 1,
+  name: "b",
+  data: [{ 1: 2, 3: "abc" }]
 }
 
 
